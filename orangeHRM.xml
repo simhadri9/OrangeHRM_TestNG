@@ -1,0 +1,42 @@
+<suite name ="orange hrm test suite">
+	 
+	<test name="adminlogin with valid data">
+		<parameter name="uid" value="Admin"></parameter>
+		<parameter name="pwd" value="Qedge123!@#"></parameter>
+		
+		<classes>
+			
+			<class name = "OHRM_testcases.admin_login_valid_inputs"></class>
+			
+		</classes>
+			
+	</test>
+	<test name = "adminlogin With invalid data">
+		<parameter name="uid" value="abc"></parameter>
+		<parameter name="pwd" value="123"></parameter>
+		<classes>
+			<class name="OHRM_testcases.adminloginWith_invaliddata"></class>
+		</classes>
+		
+	</test>
+	
+	
+	<test name= "emp registraion">
+		<parameter name = "fname" value = "latinum"></parameter>
+		<parameter name="lname" value = "p"></parameter>
+		
+		<classes>
+			<class name = "OHRM_testcases.employee_registrationeTrst"></class>
+			
+		</classes>
+	</test>
+	<test name = "user creation">
+		<parameter name="empname" value="latinum p"></parameter>
+		<parameter name="uname" value="platina"></parameter>
+		<parameter name="psw" value="Platinum@143."></parameter>
+		<classes>
+			<class name = "OHRM_testcases.usercreate_test"> </class>
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [orange hrm test suite]">
+  <test thread-count="5" name="user creation(failed)">
+    <parameter name="empname" value="latinum p"/>
+    <parameter name="uname" value="platinum"/>
+    <parameter name="psw" value="Platinum@143."/>
+    <classes>
+      <class name="OHRM_testcases.usercreate_test">
+        <methods>
+          <include name="Adminlogout"/>
+          <include name="createUser" invocation-numbers="0"/>
+          <include name="closeApp"/>
+          <include name="lunchApp"/>
+          <include name="Adminlogin"/>
+        </methods>
+      </class> <!-- OHRM_testcases.usercreate_test -->
+    </classes>
+  </test> <!-- user creation(failed) -->
+</suite> <!-- Failed suite [orange hrm test suite] -->
